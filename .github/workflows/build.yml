@@ -17,8 +17,8 @@ jobs:
       - name: Download Snapshot SDK Archive
         run: |
           # رابط أرشيف الـ SDK الخاص بمعمارية mt7621 لإصدارات SNAPSHOT القديمة
-          SDK_URL="https://downloads.openwrt.org/snapshots/targets/ramips/mt7621/openwrt-sdk-ramips-mt7621_gcc-14.4.0_musl.Linux-x86_64.tar.xz"
-          wget -q -O sdk.tar.xz "$SDK_URL" || wget -q -O sdk.tar.xz "https://archive.openwrt.org/snapshots/targets/ramips/mt7621/openwrt-sdk-ramips-mt7621_gcc-14.4.0_musl.Linux-x86_64.tar.xz"
+          SDK_URL="https://downloads.openwrt.org/snapshots/targets/ramips/mt7621/openwrt-sdk-ramips-mt7621_gcc-14.4.0_musl.Linux-x86_64.tar.zst"
+          wget -q -O sdk.tar.xz "$SDK_URL" || wget -q -O sdk.tar.xz "https://downloads.openwrt.org/snapshots/targets/ramips/mt7621/openwrt-sdk-ramips-mt7621_gcc-14.4.0_musl.Linux-x86_64.tar.zst"
           mkdir sdk
           tar -xf sdk.tar.xz -C sdk --strip-components=1
 
